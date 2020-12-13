@@ -12,7 +12,7 @@ const https = require('https')
 
 
 //If you are serving your server on any port other than 3000, change the port here, or alternatively change the url to approriate 
-const REMOTE_API_URL = `https://172.22.30.124`
+const REMOTE_API_URL = `http://localhost:3001/`
 const EMAIL = `${uuid()}@fake-email.com`
 const PASSWORD = 'webcomputing'
 let TOKEN = ''
