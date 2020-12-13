@@ -13,7 +13,7 @@ components:
       bearerFormat: JWT
 
 servers:
-  - url: https://172.22.30.124/
+  - url: https://locahost:8888/
 paths:
   /stocks/symbols:
     get:

@@ -46,14 +46,14 @@ app.use((req, res, next) => {
 });
 
 //Define routes
-app.use("/", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
+
 app.use("/stocks", indexRouter);
 app.use("/user", usersRouter);
 
 app.get("/knex", (req, res, next) => {
   req.db
-    .raw("SELECT VERSION()")
-    .then((version) => console.log(version[0][0]))
+    .raw("SELECT current_VERSION();")
+    .then((version) => console.log(version))
     .catch((err) => {
       console.log(err);
       throw err;

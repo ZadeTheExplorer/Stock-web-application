@@ -1,14 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
-
+console.log("bat luc vcl \n\n")
 //GET 1: all stocks
 // Returns all available stocks, optionally filtered by industry sector.
 router.get("/symbols", function (req, res, next) {
+  console.log("wfewfwefwe????", req)
   // When query does not have keys
   //req.query !== req.params
   if (Object.keys(req.query).length === 0) {
-    console.log(req.query.industry);
+    console.log("????", req.query.industry);
     req.db
       .from("stocks")
       .distinct("name", "symbol", "industry")
