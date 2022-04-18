@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./media/market-stock.jpg);
+}
+
+.App {
+    color: #6edb89;
+    text-align: center;
+    
+}
+
+.stockChart {
+    color: #6edb89;
+}
+
+.ag-header-cell-label {
+    /* Necessary to allow for text to grow vertically */
+    height: 100%;
+    color:red;
+}
+
+.tableContainer {
+    width: 1000px;
+    color: midnightblue;
+    background-color: #b2bec3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.dateInput {
+    display: inline-block;
+}
+
+.formContainer {
+    width: 500px;
+    padding: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -80%);
+    background: #636e72;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+
+.formContainer h1{
+    color: #8ab5ff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.formContainer input[type='email']::placeholder, .formContainer input[type='password']::placeholder {
+    color:#8ab5ff;
+}
+.formContainer input[type='email'], .formContainer input[type = 'password']{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #8ab5ff;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.formContainer input[type='email']:focus, .formContainer input[type = 'password']:focus{
+    width: 310px;
+    border-color: #b2ed1c;
+}
+.buttonLogOut, .formContainer button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b2ed1c;
+    padding: 14px 10px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
